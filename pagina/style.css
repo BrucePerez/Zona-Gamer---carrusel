@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('https://e0.pxfuel.com/wallpapers/490/819/desktop-wallpaper-game-page-2-for-your-mobile-tablet-explore-gaming-ultra-8k-ultra-game.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    font-family: Arial, sans-serif;
+    backdrop-filter: blur(10px);
+}
+
+header {
+    background-color: rgba(27, 104, 247, 0.7);
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    margin: 10px 10px 0 10px
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+}
+
+.nav li {
+    margin: 0 10px;
+    position: relative;
+}
+
+.nav li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(252, 252, 252);
+    transition: color 0.5ms ease;
+}
+
+.nav li:hover a {
+    color: rgb(22, 120, 231);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.nav li:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.barra-azul {
+    background-color: rgba(27, 104, 247, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 20px 20px 20px 20px;
+    margin: 0 10px 0 10px
+}
+
+.titulo-pequeno {
+    font-size: 30px;
+    text-align: center;
+}
+
+.contenedor-principal {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagenes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imagen {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.imagen:hover {
+    transform: scale(1.1);
+    border-color: rgb(22, 120, 231);
+}
+
+.imagen img {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center 100%; /* Ajuste más preciso para evitar el recorte en la parte superior */
+}
+
+.imagen h4 {
+    font-size: 18px;
+}
+
+.imagen h4 a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    transition: color 0.5ms ease;
+}
+
+.imagen h4 a:hover {
+    color: rgb(22, 120, 231);
+}
+
+/* Agregamos estilos específicos para el carrusel */
+.carousel {
+    overflow: hidden;
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 calc(100% / 5 - 20px);
+    box-sizing: border-box;
+    margin: 0 10px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item:hover img {
+    transform: scale(1.1);
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.carousel-controls button {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+}
